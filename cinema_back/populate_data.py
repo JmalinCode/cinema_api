@@ -31,11 +31,11 @@ def add_screenings(n=4):
 
 
 def add_ticket(order, screening):
-	seat_row = random.randint(1, 13)
-	seat_column = random.randint(1, 13)
+	row = random.randint(1, 13)
+	seat = random.randint(1, 13)
 
 	ticket = Ticket.objects.get_or_create(
-		order=order, screening=screening, seat_row=seat_row, seat_column=seat_column)
+		order=order, screening=screening, row=row, seat=seat)
 	return ticket
 
 
@@ -70,5 +70,5 @@ if __name__ == '__main__':
 	screenings_amount = 15
 	add_screenings(screenings_amount)
 
-	orders_amount = 15
-	add_orders(20)
+	orders_amount = 20
+	add_orders(orders_amount)
