@@ -7,18 +7,15 @@ Back-end part of the KPI project of the web application development course
 
 `git clone https://github.com/JmalinCode/cinema_api`
 
-`cd cinema_api`
+`cd cinema_api/cinema_back`
 
 Activate your venv
 
 `pip install -r requirements.txt`
 
-`cd cinema_back`
-
 `python manage.py makemigrations`
 
 `python manage.py migrate`
-
 
 `python manage.py runserver`
 
